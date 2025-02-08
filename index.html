@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Week Special</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="score">Score: 0</div>
+    <div class="container">
+        <h1>Celebrate Valentine's Week! ❤️</h1>
+        <div class="cards">
+            <div class="card" onclick="toggleDescription('rose')">
+                <img src="https://i.pinimg.com/736x/e1/fb/ca/e1fbca4f69a8b4bd5871f94df7e34c62.jpg" alt="Rose Day">
+                <h2>🌹 Rose Day</h2>
+                <p class="desc" id="rose-desc">Rose Day marks the beginning of Valentine's Week. Lovers express their emotions by giving roses, which symbolize love, beauty, and passion.</p>
+            </div>
+            <div class="card" onclick="toggleDescription('chocolate')">
+                <img src="https://i.pinimg.com/736x/dc/c1/97/dcc197f2dde2cb24a52798673deef21b.jpg" alt="Chocolate Day">
+                <h2>🍫 Chocolate Day</h2>
+                <p class="desc" id="chocolate-desc">Chocolate Day is about spreading sweetness in relationships. Couples exchange chocolates to make their bond stronger and sweeter.</p>
+            </div>
+            <div class="card" onclick="toggleDescription('teddy')">
+                <img src="https://i.pinimg.com/474x/cf/53/f8/cf53f8cb65505fd91c57741ab894713b.jpg" alt="Teddy Day">
+                <h2>🧸 Teddy Day</h2>
+                <p class="desc" id="teddy-desc">Teddy Day is when people give their loved ones a cute teddy bear, symbolizing warmth, comfort, and affection.</p>
+            </div>
+            <div class="card" onclick="toggleDescription('hug')">
+                <img src="https://i.pinimg.com/736x/d5/e8/b1/d5e8b165cfc85d64597569074a4b675e.jpg" alt="Hug Day">
+                <h2>🤗 Hug Day</h2>
+                <p class="desc" id="hug-desc">Hug Day is about sharing warm embraces to offer comfort, security, and love to your special one.</p>
+            </div>
+            <div class="card" onclick="toggleDescription('kiss')">
+                <img src="https://i.pinimg.com/474x/c5/78/ee/c578eea7cbd6e1f5d75433aef35bafa0.jpg" alt="Kiss Day">
+                <h2>💋 Kiss Day</h2>
+                <p class="desc" id="kiss-desc">Kiss Day celebrates love and intimacy, symbolizing affection and deep emotional connection between partners.</p>
+            </div>
+        </div>
+        
+        <div class="music-controls">
+            <audio id="loveSong" loop>
+                <source src="128-Bewajah - Sanam Teri Kasam 128 Kbps.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="music-btn" onclick="toggleMusic()">🎵 Play/Pause</button>
+        </div>
+    </div>
+
+    <div id="fireworks-container"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
